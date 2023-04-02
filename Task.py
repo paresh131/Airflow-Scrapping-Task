@@ -20,7 +20,7 @@ import pandas as pd
 
 def configureWebDriver():
     #driver = webdriver.Chrome('C:\chromedriver_win32\chromedriver.exe')
-    driver = webdriver.Chrome('\home\paresh\chromedriver_win32\chromedriver.exe')
+    driver = webdriver.Chrome('/home/paresh/chromedriver_win32/chromedriver.exe')
     return driver
 
 def scrapper():
@@ -84,8 +84,8 @@ def scrapper():
         df = pd.DataFrame(datalist)
         #d
         # f.to_excel(r'E:\Python\Qlik Partner Scrapper\US.xlsx', index = False, header=True)
-        #df.to_excel(r'/home/paresh/US.xlsx', index = False, header=True)
-        df.to_excel(r'\home\paresh\Data.xlsx', index = False, header=True)
+        df.to_excel(r'/home/paresh/US.xlsx', index = False, header=True)
+        #df.to_excel(r'\home\paresh\Data.xlsx', index = False, header=True)
 
 
 
